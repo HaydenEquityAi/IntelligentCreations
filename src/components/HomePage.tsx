@@ -15,7 +15,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <NeuralBackground />
         <GradientWave />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-20 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 2 - Intelligent Systems */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full">
             <defs>
@@ -114,7 +114,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -153,12 +154,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
               Explore Intelligent Systems <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 3 - Enterprise Solutions Lab */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -205,12 +208,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
               ))}
             </div>
           </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 4 - AI Product Studio */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -252,11 +257,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
               Explore AI Product Studio <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 5 - R&D + Innovation */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <motion.div
             className="absolute inset-0"
@@ -270,7 +276,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -315,12 +322,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
               ))}
             </div>
           </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 6 - Automation + Integration */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -371,137 +380,147 @@ export function HomePage({ onNavigate }: HomePageProps) {
               Explore Automation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 7 - Advisory + Consulting */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
-            className="mb-12 mx-auto w-32 h-32 relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Compass className="w-full h-full text-[#41E0FF] opacity-40" strokeWidth={0.5} />
-            <motion.div
-              className="absolute inset-0"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+            <h2 className="mb-6">Blueprints for the Intelligent Enterprise.</h2>
+            <p className="text-[#A9B3C1] text-xl leading-relaxed">
+              We guide leaders through AI transformation — designing architectures that scale thought itself.
+            </p>
+            <button
+              onClick={() => onNavigate('advisory')}
+              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
-              <svg className="w-full h-full" viewBox="0 0 100 100">
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="40"
-                  fill="none"
-                  stroke="url(#compass-gradient)"
-                  strokeWidth="0.5"
-                  strokeDasharray="4 4"
-                />
-                <defs>
-                  <linearGradient id="compass-gradient">
-                    <stop offset="0%" stopColor="#1E90FF" />
-                    <stop offset="100%" stopColor="#5AE0FF" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </motion.div>
+              Explore Advisory Services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
           </motion.div>
 
-          <motion.h2
-            className="mb-6"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Blueprints for the Intelligent Enterprise.
-          </motion.h2>
-
-          <motion.p
-            className="text-[#A9B3C1] text-xl leading-relaxed mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            We guide leaders through AI transformation — designing architectures that scale thought itself.
-          </motion.p>
-
-          <button
-            onClick={() => onNavigate('advisory')}
-            className="group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors mx-auto"
-          >
-            Explore Advisory Services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/20 rounded-2xl border border-[#41E0FF]/20 p-12 flex items-center justify-center overflow-hidden">
+              <Compass className="w-full h-full text-[#41E0FF] opacity-30" strokeWidth={0.5} />
+              {/* Rotating compass ring */}
+              <motion.div
+                className="absolute inset-0"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+              >
+                <svg className="w-full h-full" viewBox="0 0 100 100">
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    fill="none"
+                    stroke="url(#compass-gradient)"
+                    strokeWidth="0.5"
+                    strokeDasharray="4 4"
+                  />
+                  <defs>
+                    <linearGradient id="compass-gradient">
+                      <stop offset="0%" stopColor="#1E90FF" />
+                      <stop offset="100%" stopColor="#5AE0FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </motion.div>
+            </div>
+          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Section 8 - Final CTA */}
-      <section id="work" className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <motion.div
-          className="absolute inset-0"
-          animate={{
-            background: [
-              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
-              'radial-gradient(circle at 50% 50%, rgba(94, 224, 255, 0.2) 0%, transparent 70%)',
-              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
-            ],
-          }}
-          transition={{ duration: 5, repeat: Infinity }}
-        />
-
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <motion.h2
-            className="mb-6"
-            initial={{ opacity: 0, y: 30 }}
+      <section id="work" className="relative py-56 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+          <div className="max-w-6xl mx-auto">
+          <motion.div
+            className="relative rounded-3xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60 backdrop-blur-sm overflow-hidden"
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Let's build something intelligent together.
-          </motion.h2>
-
-          <motion.p
-            className="text-[#A9B3C1] text-xl leading-relaxed mb-12"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            Because intelligence — when designed with purpose — creates infinite leverage.
-          </motion.p>
-
-          <motion.button
-            onClick={() => onNavigate('contact')}
-            className="group relative px-12 py-5 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            whileHover={{
-              boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
-            }}
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              Start a Project <ArrowRight className="w-5 h-5" />
-            </span>
-
-            {/* Expanding ripple effect */}
+            {/* Animated background */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-[#5AE0FF] to-[#1E90FF]"
+              className="absolute inset-0"
               animate={{
-                scale: [1, 1.5, 1],
-                opacity: [0, 0.5, 0],
+                background: [
+                  'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
+                  'radial-gradient(circle at 50% 50%, rgba(94, 224, 255, 0.2) 0%, transparent 70%)',
+                  'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
+                ],
               }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-              }}
+              transition={{ duration: 5, repeat: Infinity }}
             />
-          </motion.button>
+
+            {/* Content container with vertical centering */}
+            <div className="relative z-10 flex flex-col items-center justify-center text-center px-12 py-24 lg:px-24 lg:py-32">
+              <motion.h2
+                className="mb-12 text-5xl lg:text-7xl"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              >
+                Let's build something intelligent together.
+              </motion.h2>
+
+              <motion.p
+                className="text-[#A9B3C1] text-2xl lg:text-3xl leading-relaxed mb-20 max-w-3xl"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+              >
+                Because intelligence — when designed with purpose — creates infinite leverage.
+              </motion.p>
+
+              <motion.button
+                onClick={() => onNavigate('contact')}
+                className="group relative px-32 py-10 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-2xl font-medium"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, duration: 0.8 }}
+                whileHover={{
+                  boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
+                }}
+              >
+                <span className="relative z-10 flex items-center gap-3">
+                  Start a Project <ArrowRight className="w-7 h-7" />
+                </span>
+
+                {/* Expanding ripple effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-[#5AE0FF] to-[#1E90FF]"
+                  animate={{
+                    scale: [1, 1.5, 1],
+                    opacity: [0, 0.5, 0],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                  }}
+                />
+              </motion.button>
+            </div>
+          </motion.div>
+          </div>
         </div>
       </section>
     </div>

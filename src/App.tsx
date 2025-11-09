@@ -8,6 +8,7 @@ import { InnovationLabPage } from './components/InnovationLabPage';
 import { AutomationPage } from './components/AutomationPage';
 import { AdvisoryPage } from './components/AdvisoryPage';
 import { ContactPage } from './components/ContactPage';
+import { Footer } from './components/Footer';
 
 export default function App() {
   const [activePage, setActivePage] = useState('home');
@@ -55,7 +56,10 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0B132B] text-[#F5F7FA]">
       <GlobalHeader activePage={activePage} onNavigate={handleNavigate} />
-      <main>{renderPage()}</main>
+      <main className="pl-8 lg:pl-16">
+        {renderPage()}
+        <Footer onNavigate={handleNavigate} />
+      </main>
     </div>
   );
 }

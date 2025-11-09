@@ -71,7 +71,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
           transition={{ duration: 10, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-20 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -93,7 +93,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
       </section>
 
       {/* Automation Pipelines */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -184,7 +184,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
       </section>
 
       {/* Intelligent Agents */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -259,7 +259,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
       </section>
 
       {/* System Connectivity */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -332,7 +332,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-56 px-12 lg:px-24 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -345,9 +345,9 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
           transition={{ duration: 5, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
           <motion.h2
-            className="mb-12"
+            className="mb-16 text-4xl lg:text-6xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -358,7 +358,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
 
           <motion.button
             onClick={() => onNavigate('contact')}
-            className="group relative px-12 py-5 bg-gradient-to-r from-[#5AE0FF] to-[#41E0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+            className="group relative px-24 py-8 bg-gradient-to-r from-[#5AE0FF] to-[#41E0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-xl font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -370,8 +370,8 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
               scale: 0.98,
             }}
           >
-            <span className="relative z-10 flex items-center gap-2">
-              Build Your Automation Layer <ArrowRight className="w-5 h-5" />
+            <span className="relative z-10 flex items-center gap-3">
+              Build Your Automation Layer <ArrowRight className="w-6 h-6" />
             </span>
 
             <motion.div

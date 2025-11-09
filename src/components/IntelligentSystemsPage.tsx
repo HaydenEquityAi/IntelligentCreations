@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, Layers, Brain, Network } from 'lucide-react';
+import { ArrowRight, Sparkles, Layers, Brain, Network, Rocket } from 'lucide-react';
 
 interface IntelligentSystemsPageProps {
   onNavigate: (pageId: string) => void;
@@ -57,7 +57,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
           />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-20 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -94,7 +94,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Applied Generative AI */}
-      <section id="generative-ai" className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section id="generative-ai" className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -151,7 +151,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Deep Learning */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -215,7 +215,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Machine Learning */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -280,10 +280,10 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Multi-Agent Ecosystems */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B132B] via-[#0B132B]/50 to-[#0B132B]" />
 
-        <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="relative z-10 max-w-7xl mx-auto px-12 lg:px-24">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -297,7 +297,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
             </div>
 
             <h2 className="mb-6">The Collective Mind</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto text-center">
               Collaboration between autonomous systems. Each agent learns, communicates, and co-creates — 
               forming emergent intelligence.
             </p>
@@ -373,63 +373,93 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
         </div>
       </section>
 
-      {/* Applied Intelligence in Action */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      {/* Real Systems, Real Impact */}
+      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
+            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+              <Rocket className="w-4 h-4 text-[#41E0FF]" />
+              <span className="text-[#41E0FF] text-sm">Real Systems, Real Impact</span>
+            </div>
+
             <h2 className="mb-6">Applied Intelligence in Action</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-[#A9B3C1] text-xl leading-relaxed">
               The principles of intelligent architecture come to life in every system we build. 
               Our products don't just process — they learn.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: 'InvestQuant', category: 'Financial Intelligence' },
-              { name: 'CapitalAi', category: 'Real Estate Analytics' },
-              { name: 'Project Marionette', category: 'Workflow Orchestration' },
-            ].map((project, index) => (
-              <motion.div
-                key={project.name}
-                className="group relative p-8 rounded-2xl border border-[#A9B3C1]/20 bg-gradient-to-br from-[#0B132B] to-[#0B132B]/60 overflow-hidden cursor-pointer"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.8 }}
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: '#41E0FF',
-                }}
-              >
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
+              {/* Animated project cards visualization */}
+              {Array.from({ length: 3 }).map((_, i) => (
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-[#1E90FF]/10 via-[#5AE0FF]/10 to-transparent opacity-0 group-hover:opacity-100"
-                  transition={{ duration: 0.5 }}
-                />
+                  key={i}
+                  className="absolute rounded-xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60"
+                  style={{
+                    width: '60%',
+                    height: '25%',
+                    left: `${15 + i * 5}%`,
+                    top: `${20 + i * 25}%`,
+                  }}
+                  animate={{
+                    y: [0, -10, 0],
+                    opacity: [0.6, 0.9, 0.6],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    delay: i * 0.5,
+                  }}
+                >
+                  <div className="p-4 h-full flex flex-col justify-between">
+                    <div className="w-8 h-8 bg-[#41E0FF]/20 rounded-lg mb-2" />
+                    <div className="h-2 bg-[#41E0FF]/30 rounded w-3/4 mb-1" />
+                    <div className="h-2 bg-[#41E0FF]/20 rounded w-1/2" />
+                  </div>
+                </motion.div>
+              ))}
 
-                <div className="relative z-10">
-                  <p className="text-[#41E0FF] text-sm mb-3">{project.category}</p>
-                  <h3 className="mb-4 group-hover:text-[#41E0FF] transition-colors duration-300">
-                    {project.name}
-                  </h3>
-                  <p className="text-[#A9B3C1]">
-                    Intelligence engineered for real-world impact and continuous learning.
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+              {/* Connecting lines */}
+              {Array.from({ length: 2 }).map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute h-[2px] bg-gradient-to-r from-transparent via-[#5AE0FF] to-transparent"
+                  style={{
+                    left: `${30 + i * 20}%`,
+                    top: `${35 + i * 25}%`,
+                    width: '40%',
+                  }}
+                  animate={{
+                    opacity: [0.3, 0.8, 0.3],
+                    scaleX: [1, 1.2, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    delay: i * 0.7,
+                  }}
+                />
+              ))}
+
+              <Rocket className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-10 p-12" strokeWidth={0.5} />
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Exit CTA */}
-      <section className="relative py-32 px-6 lg:px-20 overflow-hidden">
+      <section className="relative py-56 px-12 lg:px-24 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -442,9 +472,9 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
           transition={{ duration: 5, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
           <motion.h2
-            className="mb-6"
+            className="mb-12 text-4xl lg:text-6xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -455,7 +485,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
 
           <motion.button
             onClick={() => onNavigate('home')}
-            className="group px-10 py-4 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105"
+            className="group px-20 py-6 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105 text-xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -464,8 +494,8 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               boxShadow: '0 0 40px rgba(65, 224, 255, 0.4)',
             }}
           >
-            <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center gap-2">
-              Return to Living Intelligence <ArrowRight className="w-5 h-5" />
+            <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center gap-3">
+              Return to Living Intelligence <ArrowRight className="w-6 h-6" />
             </span>
           </motion.button>
         </div>

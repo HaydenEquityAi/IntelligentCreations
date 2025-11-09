@@ -36,7 +36,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           transition={{ duration: 5, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-20 w-full">
+        <div className="relative z-10 max-w-5xl mx-auto px-12 lg:px-24 w-full">
           <motion.div
             className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
