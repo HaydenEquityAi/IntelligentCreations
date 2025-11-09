@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --deep-navy: #0B132B;
+  --electric-blue: #1E90FF;
+  --cyan: #5AE0FF;
+  --pure-white: #F5F7FA;
+  --silver-gray: #A9B3C1;
+  --aqua-pulse: #41E0FF;
+  --coral-red: #FF6B6B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--deep-navy);
+  color: var(--pure-white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
