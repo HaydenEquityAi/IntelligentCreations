@@ -296,11 +296,13 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               <span className="text-[#41E0FF] text-sm">Multi-Agent Ecosystems</span>
             </div>
 
-            <h2 className="mb-6">The Collective Mind</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto text-center">
-              Collaboration between autonomous systems. Each agent learns, communicates, and co-creates — 
-              forming emergent intelligence.
-            </p>
+            <div className="flex flex-col items-center justify-center text-center px-6 sm:px-12 lg:px-24">
+              <h2 className="mb-6">The Collective Mind</h2>
+              <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto">
+                Collaboration between autonomous systems. Each agent learns, communicates, and co-creates — 
+                forming emergent intelligence.
+              </p>
+            </div>
           </motion.div>
 
           {/* Thousands of nodes visualization */}
