@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import logo from 'figma:asset/cf9f781ca361803dc9984ddf7d43a4ee832b35cb.png';
+import logo from '../assets/IntelligentCreations Logo.png';
 
 interface NavigationItem {
   id: string;
@@ -45,10 +45,10 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
             className="flex items-center gap-3 group"
             whileHover={{ scale: 1.02 }}
           >
-            <img src={logo} alt="Interactive Labs" className="h-10 w-auto" />
+            <img src={logo} alt="IntelligentCreations" className="h-10 w-auto" />
             <div className="hidden lg:block">
-              <span className="text-[#F5F7FA] group-hover:text-[#41E0FF] transition-colors duration-300">
-                InteractiveLabs.ai
+              <span className="text-[#F5F7FA] group-hover:text-[#41E0FF] transition-colors duration-300 font-semibold">
+                IntelligentCreations
               </span>
             </div>
           </motion.button>
