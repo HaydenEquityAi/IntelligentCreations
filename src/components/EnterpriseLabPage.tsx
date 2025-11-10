@@ -45,7 +45,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
           />
         ))}
 
-        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Data Infrastructure */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
+      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -130,7 +130,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Automation Architecture */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
+      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -193,7 +193,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Insight Engines */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
+      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -245,7 +245,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-56 px-12 lg:px-24 overflow-hidden">
+      <section className="relative py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -258,7 +258,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
           transition={{ duration: 5, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 lg:px-12">
           <motion.h2
             className="mb-16 text-4xl lg:text-6xl"
             initial={{ opacity: 0, y: 30 }}
@@ -280,7 +280,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
               boxShadow: '0 0 60px rgba(0, 206, 209, 0.6)',
             }}
           >
-            <span className="relative z-10 flex items-center gap-3">
+            <span className="relative z-10 flex items-center justify-center gap-3">
               Start Your Enterprise Transformation <ArrowRight className="w-6 h-6" />
             </span>
 

@@ -57,7 +57,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
           />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -94,188 +94,194 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Applied Generative AI */}
-      <section id="generative-ai" className="relative py-32 px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
-              <Sparkles className="w-4 h-4 text-[#41E0FF]" />
-              <span className="text-[#41E0FF] text-sm">Applied Generative AI</span>
-            </div>
+      <section id="generative-ai" className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+                <Sparkles className="w-4 h-4 text-[#41E0FF]" />
+                <span className="text-[#41E0FF] text-sm">Applied Generative AI</span>
+              </div>
 
-            <h2 className="mb-6">The Creative Core</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed">
-              We engineer generative systems that create — not imitate. Models that design, write, 
-              and build autonomously.
-            </p>
-          </motion.div>
+              <h2 className="mb-6">The Creative Core</h2>
+              <p className="text-[#A9B3C1] text-xl leading-relaxed">
+                We engineer generative systems that create — not imitate. Models that design, write, 
+                and build autonomously.
+              </p>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
-              {/* Flowing ribbons */}
-              {Array.from({ length: 8 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute h-2 w-full"
-                  style={{
-                    background: 'linear-gradient(90deg, transparent, #5AE0FF, transparent)',
-                    top: `${i * 12}%`,
-                    left: '-100%',
-                  }}
-                  animate={{
-                    left: ['100%', '-100%'],
-                    opacity: [0, 1, 0],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: i * 0.3,
-                    ease: 'linear',
-                  }}
-                />
-              ))}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
+                {/* Flowing ribbons */}
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute h-2 w-full"
+                    style={{
+                      background: 'linear-gradient(90deg, transparent, #5AE0FF, transparent)',
+                      top: `${i * 12}%`,
+                      left: '-100%',
+                    }}
+                    animate={{
+                      left: ['100%', '-100%'],
+                      opacity: [0, 1, 0],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      delay: i * 0.3,
+                      ease: 'linear',
+                    }}
+                  />
+                ))}
 
-              <Sparkles className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-20 p-12" strokeWidth={0.5} />
-            </div>
-          </motion.div>
+                <Sparkles className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-20 p-12" strokeWidth={0.5} />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Deep Learning */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            className="order-2 lg:order-1"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#8B5CF6]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
-              {/* Stacked translucent planes */}
-              {Array.from({ length: 6 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute inset-0 border-2 border-[#5AE0FF]/30 rounded-2xl"
-                  style={{
-                    transform: `translateZ(${i * 20}px) scale(${1 - i * 0.1})`,
-                    margin: `${i * 12}px`,
-                  }}
-                  animate={{
-                    opacity: [0.1 + i * 0.1, 0.3 + i * 0.1, 0.1 + i * 0.1],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: i * 0.2,
-                  }}
-                >
-                  {/* Violet-blue lighting between planes */}
-                  <div
-                    className="absolute inset-0 rounded-2xl"
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              className="order-2 lg:order-1"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#8B5CF6]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
+                {/* Stacked translucent planes */}
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute inset-0 border-2 border-[#5AE0FF]/30 rounded-2xl"
                     style={{
-                      background: `linear-gradient(135deg, rgba(139, 92, 246, ${0.1 + i * 0.05}) 0%, rgba(30, 144, 255, ${0.1 + i * 0.05}) 100%)`,
+                      transform: `translateZ(${i * 20}px) scale(${1 - i * 0.1})`,
+                      margin: `${i * 12}px`,
                     }}
-                  />
-                </motion.div>
-              ))}
+                    animate={{
+                      opacity: [0.1 + i * 0.1, 0.3 + i * 0.1, 0.1 + i * 0.1],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      delay: i * 0.2,
+                    }}
+                  >
+                    {/* Violet-blue lighting between planes */}
+                    <div
+                      className="absolute inset-0 rounded-2xl"
+                      style={{
+                        background: `linear-gradient(135deg, rgba(139, 92, 246, ${0.1 + i * 0.05}) 0%, rgba(30, 144, 255, ${0.1 + i * 0.05}) 100%)`,
+                      }}
+                    />
+                  </motion.div>
+                ))}
 
-              <Layers className="absolute inset-0 w-full h-full text-[#8B5CF6] opacity-20 p-12" strokeWidth={0.5} />
-            </div>
-          </motion.div>
+                <Layers className="absolute inset-0 w-full h-full text-[#8B5CF6] opacity-20 p-12" strokeWidth={0.5} />
+              </div>
+            </motion.div>
 
-          <motion.div
-            className="order-1 lg:order-2"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#1E90FF]/20 border border-[#8B5CF6]/30 rounded-full">
-              <Layers className="w-4 h-4 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] text-sm">Deep Learning</span>
-            </div>
+            <motion.div
+              className="order-1 lg:order-2"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#1E90FF]/20 border border-[#8B5CF6]/30 rounded-full">
+                <Layers className="w-4 h-4 text-[#8B5CF6]" />
+                <span className="text-[#8B5CF6] text-sm">Deep Learning</span>
+              </div>
 
-            <h2 className="mb-6">The Depth of Cognition</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed">
-              The hidden layers of understanding. Networks that extract meaning, build memory, 
-              and refine awareness.
-            </p>
-          </motion.div>
+              <h2 className="mb-6">The Depth of Cognition</h2>
+              <p className="text-[#A9B3C1] text-xl leading-relaxed">
+                The hidden layers of understanding. Networks that extract meaning, build memory, 
+                and refine awareness.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Machine Learning */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
-              <Brain className="w-4 h-4 text-[#41E0FF]" />
-              <span className="text-[#41E0FF] text-sm">Machine Learning</span>
-            </div>
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+                <Brain className="w-4 h-4 text-[#41E0FF]" />
+                <span className="text-[#41E0FF] text-sm">Machine Learning</span>
+              </div>
 
-            <h2 className="mb-6">The Learning Engine</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed">
-              Intelligence that improves itself. Every dataset teaches, every cycle refines. 
-              The engine that adapts faster than it's coded.
-            </p>
-          </motion.div>
+              <h2 className="mb-6">The Learning Engine</h2>
+              <p className="text-[#A9B3C1] text-xl leading-relaxed">
+                Intelligence that improves itself. Every dataset teaches, every cycle refines. 
+                The engine that adapts faster than it's coded.
+              </p>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
-              {/* Reconfiguring data particles */}
-              {Array.from({ length: 50 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-2 h-2 bg-[#41E0FF] rounded-full"
-                  initial={{
-                    x: Math.random() * 100 + '%',
-                    y: Math.random() * 100 + '%',
-                  }}
-                  animate={{
-                    x: [
-                      `${Math.random() * 100}%`,
-                      `${Math.random() * 100}%`,
-                      `${Math.random() * 100}%`,
-                    ],
-                    y: [
-                      `${Math.random() * 100}%`,
-                      `${Math.random() * 100}%`,
-                      `${Math.random() * 100}%`,
-                    ],
-                    opacity: [0.3, 1, 0.3],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    delay: i * 0.05,
-                    ease: 'easeInOut',
-                  }}
-                />
-              ))}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
+                {/* Reconfiguring data particles */}
+                {Array.from({ length: 50 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute w-2 h-2 bg-[#41E0FF] rounded-full"
+                    initial={{
+                      x: Math.random() * 100 + '%',
+                      y: Math.random() * 100 + '%',
+                    }}
+                    animate={{
+                      x: [
+                        `${Math.random() * 100}%`,
+                        `${Math.random() * 100}%`,
+                        `${Math.random() * 100}%`,
+                      ],
+                      y: [
+                        `${Math.random() * 100}%`,
+                        `${Math.random() * 100}%`,
+                        `${Math.random() * 100}%`,
+                      ],
+                      opacity: [0.3, 1, 0.3],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      delay: i * 0.05,
+                      ease: 'easeInOut',
+                    }}
+                  />
+                ))}
 
-              <Brain className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-10 p-12" strokeWidth={0.5} />
-            </div>
-          </motion.div>
+                <Brain className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-10 p-12" strokeWidth={0.5} />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -283,7 +289,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B132B] via-[#0B132B]/50 to-[#0B132B]" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -296,13 +302,11 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               <span className="text-[#41E0FF] text-sm">Multi-Agent Ecosystems</span>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center px-6 sm:px-12 lg:px-24">
-              <h2 className="mb-6">The Collective Mind</h2>
-              <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto">
-                Collaboration between autonomous systems. Each agent learns, communicates, and co-creates — 
-                forming emergent intelligence.
-              </p>
-            </div>
+            <h2 className="mb-6">The Collective Mind</h2>
+            <p className="text-[#A9B3C1] text-xl leading-relaxed max-w-3xl mx-auto">
+              Collaboration between autonomous systems. Each agent learns, communicates, and co-creates — 
+              forming emergent intelligence.
+            </p>
           </motion.div>
 
           {/* Thousands of nodes visualization */}
@@ -376,92 +380,94 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Real Systems, Real Impact */}
-      <section className="relative py-32 px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
-              <Rocket className="w-4 h-4 text-[#41E0FF]" />
-              <span className="text-[#41E0FF] text-sm">Real Systems, Real Impact</span>
-            </div>
+      <section className="relative py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+                <Rocket className="w-4 h-4 text-[#41E0FF]" />
+                <span className="text-[#41E0FF] text-sm">Real Systems, Real Impact</span>
+              </div>
 
-            <h2 className="mb-6">Applied Intelligence in Action</h2>
-            <p className="text-[#A9B3C1] text-xl leading-relaxed">
-              The principles of intelligent architecture come to life in every system we build. 
-              Our products don't just process — they learn.
-            </p>
-          </motion.div>
+              <h2 className="mb-6">Applied Intelligence in Action</h2>
+              <p className="text-[#A9B3C1] text-xl leading-relaxed">
+                The principles of intelligent architecture come to life in every system we build. 
+                Our products don't just process — they learn.
+              </p>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
-              {/* Animated project cards visualization */}
-              {Array.from({ length: 3 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute rounded-xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60"
-                  style={{
-                    width: '60%',
-                    height: '25%',
-                    left: `${15 + i * 5}%`,
-                    top: `${20 + i * 25}%`,
-                  }}
-                  animate={{
-                    y: [0, -10, 0],
-                    opacity: [0.6, 0.9, 0.6],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: i * 0.5,
-                  }}
-                >
-                  <div className="p-4 h-full flex flex-col justify-between">
-                    <div className="w-8 h-8 bg-[#41E0FF]/20 rounded-lg mb-2" />
-                    <div className="h-2 bg-[#41E0FF]/30 rounded w-3/4 mb-1" />
-                    <div className="h-2 bg-[#41E0FF]/20 rounded w-1/2" />
-                  </div>
-                </motion.div>
-              ))}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative aspect-square bg-gradient-to-br from-[#0B132B] to-[#1E90FF]/10 rounded-2xl border border-[#41E0FF]/20 p-12 overflow-hidden">
+                {/* Animated project cards visualization */}
+                {Array.from({ length: 3 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute rounded-xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60"
+                    style={{
+                      width: '60%',
+                      height: '25%',
+                      left: `${15 + i * 5}%`,
+                      top: `${20 + i * 25}%`,
+                    }}
+                    animate={{
+                      y: [0, -10, 0],
+                      opacity: [0.6, 0.9, 0.6],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      delay: i * 0.5,
+                    }}
+                  >
+                    <div className="p-4 h-full flex flex-col justify-between">
+                      <div className="w-8 h-8 bg-[#41E0FF]/20 rounded-lg mb-2" />
+                      <div className="h-2 bg-[#41E0FF]/30 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-[#41E0FF]/20 rounded w-1/2" />
+                    </div>
+                  </motion.div>
+                ))}
 
-              {/* Connecting lines */}
-              {Array.from({ length: 2 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute h-[2px] bg-gradient-to-r from-transparent via-[#5AE0FF] to-transparent"
-                  style={{
-                    left: `${30 + i * 20}%`,
-                    top: `${35 + i * 25}%`,
-                    width: '40%',
-                  }}
-                  animate={{
-                    opacity: [0.3, 0.8, 0.3],
-                    scaleX: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    delay: i * 0.7,
-                  }}
-                />
-              ))}
+                {/* Connecting lines */}
+                {Array.from({ length: 2 }).map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute h-[2px] bg-gradient-to-r from-transparent via-[#5AE0FF] to-transparent"
+                    style={{
+                      left: `${30 + i * 20}%`,
+                      top: `${35 + i * 25}%`,
+                      width: '40%',
+                    }}
+                    animate={{
+                      opacity: [0.3, 0.8, 0.3],
+                      scaleX: [1, 1.2, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: i * 0.7,
+                    }}
+                  />
+                ))}
 
-              <Rocket className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-10 p-12" strokeWidth={0.5} />
-            </div>
-          </motion.div>
+                <Rocket className="absolute inset-0 w-full h-full text-[#41E0FF] opacity-10 p-12" strokeWidth={0.5} />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Exit CTA */}
-      <section className="relative py-56 px-12 lg:px-24 overflow-hidden">
+      <section className="relative py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -474,32 +480,34 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
           transition={{ duration: 5, repeat: Infinity }}
         />
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <motion.h2
-            className="mb-12 text-4xl lg:text-6xl"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            Explore how intelligence takes form.
-          </motion.h2>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex flex-col items-center justify-center text-center">
+            <motion.h2
+              className="mb-12 text-4xl lg:text-6xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              Explore how intelligence takes form.
+            </motion.h2>
 
-          <motion.button
-            onClick={() => onNavigate('home')}
-            className="group px-20 py-6 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105 text-xl"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            whileHover={{
-              boxShadow: '0 0 40px rgba(65, 224, 255, 0.4)',
-            }}
-          >
-            <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center gap-3">
-              Return to Living Intelligence <ArrowRight className="w-6 h-6" />
-            </span>
-          </motion.button>
+            <motion.button
+              onClick={() => onNavigate('home')}
+              className="group px-20 py-6 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105 text-xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              whileHover={{
+                boxShadow: '0 0 40px rgba(65, 224, 255, 0.4)',
+              }}
+            >
+              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-3">
+                Return to Living Intelligence <ArrowRight className="w-6 h-6" />
+              </span>
+            </motion.button>
+          </div>
         </div>
       </section>
     </div>

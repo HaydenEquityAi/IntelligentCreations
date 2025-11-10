@@ -54,10 +54,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B132B] text-[#F5F7FA] flex flex-col">
+    <div className="min-h-screen bg-[#0B132B] text-[#F5F7FA] flex flex-col items-center">
       <GlobalHeader activePage={activePage} onNavigate={handleNavigate} />
       <main className="flex-1 w-full">
-        <div className="w-full max-w-[1920px] mx-auto">
+        <div className="w-full max-w-[1400px] mx-auto">
           {renderPage()}
           <Footer onNavigate={handleNavigate} />
         </div>

@@ -15,7 +15,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <NeuralBackground />
         <GradientWave />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -114,7 +114,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -160,7 +160,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       {/* Section 3 - Enterprise Solutions Lab */}
       <section className="relative py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -214,7 +214,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       {/* Section 4 - AI Product Studio */}
       <section className="relative py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -276,7 +276,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -328,7 +328,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       {/* Section 6 - Automation + Integration */}
       <section className="relative py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
@@ -386,7 +386,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       {/* Section 7 - Advisory + Consulting */}
       <section className="relative py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -446,7 +446,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       {/* Section 8 - Final CTA */}
       <section id="work" className="relative py-56 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
           <motion.div
             className="relative rounded-3xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60 backdrop-blur-sm overflow-hidden"
@@ -469,7 +469,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             />
 
             {/* Content container with vertical centering */}
-            <div className="relative z-10 flex flex-col items-center justify-center text-center px-12 py-24 lg:px-24 lg:py-32">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 lg:px-12 lg:py-32">
               <motion.h2
                 className="mb-12 text-5xl lg:text-7xl"
                 initial={{ opacity: 0, y: 30 }}
@@ -481,7 +481,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </motion.h2>
 
               <motion.p
-                className="text-[#A9B3C1] text-2xl lg:text-3xl leading-relaxed mb-20 max-w-3xl"
+                className="text-[#A9B3C1] text-2xl lg:text-3xl leading-relaxed mb-20 max-w-3xl mx-auto"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -501,7 +501,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
                 }}
               >
-                <span className="relative z-10 flex items-center gap-3">
+                <span className="relative z-10 flex items-center justify-center gap-3">
                   Start a Project <ArrowRight className="w-7 h-7" />
                 </span>
 
