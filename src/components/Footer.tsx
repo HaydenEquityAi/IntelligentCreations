@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Linkedin, Twitter, Github, Facebook } from 'lucide-react';
 import logo from '../assets/IntelligentCreations Logo.png';
 
 export interface FooterProps {
@@ -10,10 +10,9 @@ export function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="relative mt-48 border-t border-[#41E0FF]/20 bg-[#0B132B]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-10 lg:gap-16 mb-12">
-          {/* Brand Column */}
-          <div>
-            {/* Logo */}
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-16 lg:gap-12 mb-12">
+          {/* Brand Column - Takes more space on desktop */}
+          <div className="lg:flex-1 lg:max-w-xs">
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src={logo} 
@@ -22,37 +21,13 @@ export function Footer({ onNavigate }: FooterProps) {
               />
               <h3 className="text-xl font-bold text-[#F5F7FA]">Intelligent Creations</h3>
             </div>
-            <p className="text-[#A9B3C1] text-sm mb-6 leading-relaxed">Where intelligence meets creation.</p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://linkedin.com/company/intelligentcreations"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com/intelligentcreations"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://github.com/intelligentcreations"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-            </div>
+            <p className="text-[#A9B3C1] text-sm mb-6 leading-relaxed">
+              Where intelligence meets creation.
+            </p>
           </div>
 
           {/* Services Column */}
-          <div>
+          <div className="lg:flex-shrink-0">
             <h4 className="text-[#F5F7FA] font-semibold mb-4 text-xs uppercase tracking-wider">SERVICES</h4>
             <ul className="space-y-3">
               {[
@@ -74,7 +49,7 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
 
           {/* Company Column */}
-          <div>
+          <div className="lg:flex-shrink-0">
             <h4 className="text-[#F5F7FA] font-semibold mb-4 text-xs uppercase tracking-wider">COMPANY</h4>
             <ul className="space-y-3">
               {[
@@ -95,15 +70,48 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
 
           {/* Connect Column */}
-          <div>
+          <div className="lg:flex-shrink-0">
             <h4 className="text-[#F5F7FA] font-semibold mb-4 text-xs uppercase tracking-wider">CONNECT</h4>
+            
+            {/* Email */}
             <a
-              href="mailto:contact@intelligentcreations.ai"
-              className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300 text-sm flex items-center gap-2"
+              href="mailto:info@intelligentcreations.ai"
+              className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300 text-sm flex items-center gap-2 mb-6"
             >
               <Mail className="w-4 h-4" />
-              contact@intelligentcreations.ai
+              info@intelligentcreations.ai
             </a>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://linkedin.com/company/intelligentcreations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://facebook.com/intelligentcreations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://twitter.com/intelligentcreations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
