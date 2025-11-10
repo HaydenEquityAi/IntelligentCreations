@@ -76,18 +76,20 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
             Every system we build begins with one question — how does intelligence emerge?
           </motion.p>
 
-          <motion.button
-            onClick={() => document.getElementById('generative-ai')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group relative px-10 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 flex items-center gap-6 sm:gap-6 z-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            whileHover={{
-              boxShadow: '0 0 50px rgba(94, 224, 255, 0.6)',
-            }}
-          >
-            Explore the Ecosystem <ArrowRight className="w-5 h-5" />
-          </motion.button>
+          <div className="flex justify-center">
+            <motion.button
+              onClick={() => document.getElementById('generative-ai')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group relative px-10 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 flex items-center gap-6 sm:gap-6 z-10"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              whileHover={{
+                boxShadow: '0 0 50px rgba(94, 224, 255, 0.6)',
+              }}
+            >
+              Explore the Ecosystem <ArrowRight className="w-5 h-5" />
+            </motion.button>
+          </div>
         </div>
       </section>
 
