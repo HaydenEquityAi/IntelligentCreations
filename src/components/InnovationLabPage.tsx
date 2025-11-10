@@ -312,7 +312,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
 
           <motion.button
             onClick={() => onNavigate('contact')}
-            className="group relative px-8 sm:px-16 lg:px-24 py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-lg lg:text-xl font-medium"
+            className="group relative px-8 sm:px-16 lg:px-24 py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-lg lg:text-xl font-medium flex items-center justify-center gap-8 sm:gap-6 z-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -324,9 +324,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
               scale: 0.98,
             }}
           >
-            <span className="relative z-10 flex items-center justify-center gap-8 sm:gap-6">
-              Explore Research Opportunities <ArrowRight className="w-6 h-6" />
-            </span>
+            Explore Research Opportunities <ArrowRight className="w-6 h-6" />
 
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-[#5AE0FF] to-[#1E90FF]"

@@ -61,20 +61,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
           >
             <button
               onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(94,224,255,0.6)]"
+              className="group relative px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(94,224,255,0.6)] flex items-center justify-center gap-6 sm:gap-6 z-10"
             >
-              <span className="relative z-10 flex items-center justify-center gap-6 sm:gap-6">
-                Explore Our Work <ArrowRight className="w-5 h-5" />
-              </span>
+              Explore Our Work <ArrowRight className="w-5 h-5" />
             </button>
 
             <button
               onClick={() => onNavigate('about')}
-              className="group px-8 py-4 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:shadow-[0_0_30px_rgba(65,224,255,0.4)] hover:scale-105"
+              className="group px-8 py-4 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:shadow-[0_0_30px_rgba(65,224,255,0.4)] hover:scale-105 group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-6 sm:gap-6"
             >
-              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-6 sm:gap-6">
-                Learn About The Lab <ArrowRight className="w-5 h-5" />
-              </span>
+              Learn About The Lab <ArrowRight className="w-5 h-5" />
             </button>
           </motion.div>
         </div>
@@ -485,7 +481,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
               <motion.button
                 onClick={() => onNavigate('contact')}
-                className="group relative px-8 sm:px-16 lg:px-32 py-4 sm:py-6 lg:py-10 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-xl lg:text-2xl font-medium"
+                className="group relative px-8 sm:px-16 lg:px-32 py-4 sm:py-6 lg:py-10 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-xl lg:text-2xl font-medium flex items-center justify-center gap-8 sm:gap-6 z-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -494,9 +490,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
                 }}
               >
-                <span className="relative z-10 flex items-center justify-center gap-8 sm:gap-6">
-                  Start a Project <ArrowRight className="w-7 h-7" />
-                </span>
+                Start a Project <ArrowRight className="w-7 h-7" />
 
                 {/* Expanding ripple effect */}
                 <motion.div

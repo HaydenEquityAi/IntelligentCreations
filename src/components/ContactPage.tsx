@@ -159,7 +159,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
               <motion.button
                 type="submit"
-                className="group relative w-full px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300"
+                className="group relative w-full px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 flex items-center justify-center gap-6 z-10"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: '0 0 40px rgba(94, 224, 255, 0.6)',
@@ -168,9 +168,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   scale: 0.98,
                 }}
               >
-                <span className="relative z-10 flex items-center justify-center gap-6">
-                  Send Message <ArrowRight className="w-5 h-5" />
-                </span>
+                Send Message <ArrowRight className="w-5 h-5" />
 
                 {/* Glowing edge pulse */}
                 <motion.div

@@ -78,7 +78,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
 
           <motion.button
             onClick={() => document.getElementById('generative-ai')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group relative px-10 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+            className="group relative px-10 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 flex items-center gap-6 sm:gap-6 z-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -86,9 +86,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               boxShadow: '0 0 50px rgba(94, 224, 255, 0.6)',
             }}
           >
-            <span className="relative z-10 flex items-center gap-6 sm:gap-6">
-              Explore the Ecosystem <ArrowRight className="w-5 h-5" />
-            </span>
+            Explore the Ecosystem <ArrowRight className="w-5 h-5" />
           </motion.button>
         </div>
       </section>
@@ -494,7 +492,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
 
             <motion.button
               onClick={() => onNavigate('home')}
-              className="group px-6 sm:px-12 lg:px-20 py-3 sm:py-4 lg:py-6 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105 text-base sm:text-lg lg:text-xl"
+              className="group px-6 sm:px-12 lg:px-20 py-3 sm:py-4 lg:py-6 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:scale-105 text-base sm:text-lg lg:text-xl group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-8 sm:gap-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -503,9 +501,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
                 boxShadow: '0 0 40px rgba(65, 224, 255, 0.4)',
               }}
             >
-              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-8 sm:gap-6">
-                Return to Living Intelligence <ArrowRight className="w-6 h-6" />
-              </span>
+              Return to Living Intelligence <ArrowRight className="w-6 h-6" />
             </motion.button>
           </div>
         </div>
