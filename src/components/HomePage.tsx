@@ -63,7 +63,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
               className="group relative px-8 py-4 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(94,224,255,0.6)]"
             >
-              <span className="relative z-10 flex items-center justify-center gap-5 sm:gap-4">
+              <span className="relative z-10 flex items-center justify-center gap-6 sm:gap-6">
                 Explore Our Work <ArrowRight className="w-5 h-5" />
               </span>
             </button>
@@ -72,7 +72,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               onClick={() => onNavigate('about')}
               className="group px-8 py-4 bg-transparent border-2 border-[#A9B3C1]/30 rounded-lg transition-all duration-300 hover:border-[#41E0FF] hover:shadow-[0_0_30px_rgba(65,224,255,0.4)] hover:scale-105"
             >
-              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-5 sm:gap-4">
+              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-6 sm:gap-6">
                 Learn About The Lab <ArrowRight className="w-5 h-5" />
               </span>
             </button>
@@ -149,7 +149,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('intelligent-systems')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Intelligent Systems <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -175,7 +175,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('enterprise-lab')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Enterprise Lab <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -252,7 +252,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('ai-product-studio')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore AI Product Studio <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -290,7 +290,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('rnd')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore R&D <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -375,7 +375,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('automation')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Automation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -400,7 +400,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('advisory')}
-              className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Advisory Services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -494,7 +494,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
                 }}
               >
-                <span className="relative z-10 flex items-center justify-center gap-5 sm:gap-5">
+                <span className="relative z-10 flex items-center justify-center gap-8 sm:gap-6">
                   Start a Project <ArrowRight className="w-7 h-7" />
                 </span>
 

@@ -280,7 +280,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
               boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
             }}
           >
-            <span className="relative z-10 flex items-center justify-center gap-5 sm:gap-5">
+            <span className="relative z-10 flex items-center justify-center gap-8 sm:gap-6">
               Start Your Enterprise Transformation <ArrowRight className="w-6 h-6" />
             </span>
 

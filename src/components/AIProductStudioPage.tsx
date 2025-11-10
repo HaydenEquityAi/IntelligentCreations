@@ -128,7 +128,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
                 <p className="text-[#A9B3C1] text-lg leading-relaxed">{product.description}</p>
 
                 <motion.button
-                  className="mt-12 sm:mt-8 group flex items-center gap-5 sm:gap-4 transition-colors"
+                  className="mt-12 sm:mt-8 group flex items-center gap-6 sm:gap-6 transition-colors"
                   style={{ color: product.color }}
                   whileHover={{ x: 5 }}
                 >
@@ -232,7 +232,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
               scale: 0.98,
             }}
           >
-            <span className="relative z-10 flex items-center justify-center gap-5 sm:gap-5">
+            <span className="relative z-10 flex items-center justify-center gap-8 sm:gap-6">
               Partner with Our Studio <ArrowRight className="w-6 h-6" />
             </span>
 
