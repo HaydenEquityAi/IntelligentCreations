@@ -54,7 +54,7 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
           </motion.button>
 
           {/* CENTER: Company name on mobile only */}
-          <div className="absolute left-1/2 -translate-x-1/2 lg:hidden z-0">
+          <div className="absolute left-1/2 -translate-x-1/2 xl:hidden z-0">
             <span className="text-lg font-semibold text-[#F5F7FA] whitespace-nowrap">
               Intelligent Creations
             </span>
