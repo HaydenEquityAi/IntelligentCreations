@@ -54,11 +54,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B132B] text-[#F5F7FA]">
+    <div className="min-h-screen bg-[#0B132B] text-[#F5F7FA] flex flex-col">
       <GlobalHeader activePage={activePage} onNavigate={handleNavigate} />
-      <main className="pl-8 lg:pl-16">
-        {renderPage()}
-        <Footer onNavigate={handleNavigate} />
+      <main className="flex-1 w-full">
+        <div className="w-full max-w-[1920px] mx-auto">
+          {renderPage()}
+          <Footer onNavigate={handleNavigate} />
+        </div>
       </main>
     </div>
   );
