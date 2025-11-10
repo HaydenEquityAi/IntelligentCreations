@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import logo from '../assets/IntelligentCreations Logo.png';
 
@@ -25,11 +25,13 @@ interface GlobalHeaderProps {
 }
 
 export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 border-b border-[#A9B3C1]/10"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-[#41E0FF]/20"
       style={{
-        backgroundColor: 'rgba(11, 19, 43, 0.6)',
+        backgroundColor: 'rgba(11, 19, 43, 0.95)',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
       }}
@@ -53,7 +55,7 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
             </div>
           </motion.button>
 
-          {/* Navigation Tabs */}
+          {/* Desktop Navigation Tabs */}
           <nav className="hidden xl:flex items-center gap-6">
             {navigationItems.map((item) => (
               <motion.button
@@ -105,14 +107,51 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="xl:hidden p-2 text-[#F5F7FA] hover:text-[#41E0FF] transition-colors"
-            aria-label="Menu"
+            aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              {isMobileMenuOpen ? (
+                // X icon when open
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                // Hamburger icon when closed
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
             </svg>
           </button>
         </div>
+
+        {/* Mobile Navigation Dropdown */}
+        {isMobileMenuOpen && (
+          <motion.div
+            className="xl:hidden border-t border-[#41E0FF]/20"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <nav className="flex flex-col py-4">
+              {navigationItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    onNavigate(item.id);
+                    setIsMobileMenuOpen(false); // Close menu after navigation
+                  }}
+                  className={`px-6 py-3 text-left transition-colors ${
+                    activePage === item.id
+                      ? 'text-[#41E0FF] bg-[#41E0FF]/10'
+                      : 'text-[#F5F7FA] hover:text-[#41E0FF] hover:bg-[#41E0FF]/5'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+          </motion.div>
+        )}
       </div>
     </motion.header>
   );
