@@ -70,7 +70,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               <p className="text-[#A9B3C1] mb-4">Reach out directly to discuss your project</p>
               <a
                 href="mailto:hello@interactivelabs.ai"
-                className="text-[#41E0FF] hover:text-[#5AE0FF] transition-colors flex items-center gap-2"
+                className="text-[#41E0FF] hover:text-[#5AE0FF] transition-colors flex items-center gap-4"
               >
                 hello@interactivelabs.ai <ArrowRight className="w-4 h-4" />
               </a>
@@ -168,7 +168,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   scale: 0.98,
                 }}
               >
-                <span className="relative z-10 flex items-center justify-center gap-2">
+                <span className="relative z-10 flex items-center justify-center gap-4">
                   Send Message <ArrowRight className="w-5 h-5" />
                 </span>
 

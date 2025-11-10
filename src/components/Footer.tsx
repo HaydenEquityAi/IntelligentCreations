@@ -76,7 +76,7 @@ export function Footer({ onNavigate }: FooterProps) {
             {/* Email */}
             <a
               href="mailto:info@intelligentcreations.ai"
-              className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300 text-sm flex items-center gap-2 mb-6"
+              className="text-[#A9B3C1] hover:text-[#41E0FF] transition-colors duration-300 text-sm flex items-center gap-4 mb-6"
             >
               <Mail className="w-4 h-4" />
               info@intelligentcreations.ai

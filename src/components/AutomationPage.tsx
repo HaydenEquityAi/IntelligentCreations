@@ -370,7 +370,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
               scale: 0.98,
             }}
           >
-            <span className="relative z-10 flex items-center justify-center gap-4 sm:gap-3">
+            <span className="relative z-10 flex items-center justify-center gap-5 sm:gap-5">
               Build Your Automation Layer <ArrowRight className="w-6 h-6" />
             </span>
 
