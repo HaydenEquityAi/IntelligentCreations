@@ -11,7 +11,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="pt-20">
       {/* Hero Section - "Living Intelligence" */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 sm:pt-0">
         <NeuralBackground />
         <GradientWave />
 
@@ -45,7 +45,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
+            className="mb-16 sm:mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -83,7 +83,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 2 - Intelligent Systems */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full">
             <defs>
@@ -115,7 +115,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -149,7 +149,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('intelligent-systems')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Intelligent Systems <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -159,9 +159,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 3 - Enterprise Solutions Lab */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -175,7 +175,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('enterprise-lab')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Enterprise Lab <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -213,9 +213,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 4 - AI Product Studio */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -252,7 +252,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('ai-product-studio')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore AI Product Studio <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -262,7 +262,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 5 - R&D + Innovation */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <motion.div
             className="absolute inset-0"
@@ -277,7 +277,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -290,7 +290,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('rnd')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore R&D <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -327,9 +327,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 6 - Automation + Integration */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -375,7 +375,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('automation')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Automation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -385,9 +385,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 7 - Advisory + Consulting */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -400,7 +400,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </p>
             <button
               onClick={() => onNavigate('advisory')}
-              className="mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
+              className="mt-12 sm:mt-8 group flex items-center gap-2 text-[#41E0FF] hover:text-[#5AE0FF] transition-colors"
             >
               Explore Advisory Services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -445,7 +445,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 8 - Final CTA */}
-      <section id="work" className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
+      <section id="work" className="relative py-24 sm:py-32 lg:py-56 overflow-hidden">
         {/* Animated background */}
         <motion.div
           className="absolute inset-0"

@@ -10,7 +10,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 sm:pt-0">
         {/* 3D Neural Wave Background */}
         <div className="absolute inset-0">
           <svg className="absolute inset-0 w-full h-full opacity-20">
@@ -68,7 +68,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
+            className="mb-16 sm:mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -96,7 +96,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       {/* Applied Generative AI */}
       <section id="generative-ai" className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -153,9 +153,9 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Deep Learning */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
             <motion.div
               className="order-2 lg:order-1"
               initial={{ opacity: 0, x: -50 }}
@@ -219,9 +219,9 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Machine Learning */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -286,7 +286,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Multi-Agent Ecosystems */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B132B] via-[#0B132B]/50 to-[#0B132B]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
@@ -380,9 +380,9 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Real Systems, Real Impact */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -467,7 +467,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
       </section>
 
       {/* Exit CTA */}
-      <section className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
+      <section className="relative py-24 sm:py-32 lg:py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{

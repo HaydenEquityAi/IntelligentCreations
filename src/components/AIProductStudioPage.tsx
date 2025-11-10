@@ -34,7 +34,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 sm:pt-0">
         {/* Aqua blueprint glow background */}
         <motion.div
           className="absolute inset-0"
@@ -83,7 +83,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
+            className="mb-16 sm:mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -96,7 +96,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
 
       {/* Products Section */}
       {products.map((product, index) => (
-        <section key={product.name} className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+        <section key={product.name} className="relative py-20 sm:py-28 lg:py-32 px-6 lg:px-12 overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <motion.div
               className={`grid lg:grid-cols-2 gap-16 items-center ${
@@ -128,7 +128,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
                 <p className="text-[#A9B3C1] text-lg leading-relaxed">{product.description}</p>
 
                 <motion.button
-                  className="mt-8 group flex items-center gap-2 transition-colors"
+                  className="mt-12 sm:mt-8 group flex items-center gap-2 transition-colors"
                   style={{ color: product.color }}
                   whileHover={{ x: 5 }}
                 >
@@ -194,7 +194,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
       ))}
 
       {/* CTA Section */}
-      <section className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
+      <section className="relative py-24 sm:py-32 lg:py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{

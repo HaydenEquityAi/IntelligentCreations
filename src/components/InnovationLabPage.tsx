@@ -10,7 +10,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 sm:pt-0">
         {/* Violet-Cyan mist background */}
         <motion.div
           className="absolute inset-0"
@@ -79,7 +79,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
+            className="mb-16 sm:mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -91,8 +91,8 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
       </section>
 
       {/* Applied Research */}
-      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+      <section className="relative py-20 sm:py-28 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -150,8 +150,8 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
       </section>
 
       {/* Fine-Tuning & Training */}
-      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+      <section className="relative py-20 sm:py-28 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -219,8 +219,8 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
       </section>
 
       {/* Prototyping */}
-      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+      <section className="relative py-20 sm:py-28 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -286,7 +286,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
+      <section className="relative py-24 sm:py-32 lg:py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
