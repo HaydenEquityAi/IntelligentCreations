@@ -324,7 +324,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
               scale: 0.98,
             }}
           >
-            <span className="relative z-10 flex items-center justify-center gap-3">
+            <span className="relative z-10 flex items-center justify-center gap-4 sm:gap-3">
               Explore Research Opportunities <ArrowRight className="w-6 h-6" />
             </span>
 

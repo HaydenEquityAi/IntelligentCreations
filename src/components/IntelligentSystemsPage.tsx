@@ -86,7 +86,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               boxShadow: '0 0 50px rgba(94, 224, 255, 0.6)',
             }}
           >
-            <span className="relative z-10 flex items-center gap-2">
+            <span className="relative z-10 flex items-center gap-3 sm:gap-2">
               Explore the Ecosystem <ArrowRight className="w-5 h-5" />
             </span>
           </motion.button>
@@ -503,7 +503,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
                 boxShadow: '0 0 40px rgba(65, 224, 255, 0.4)',
               }}
             >
-              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-3">
+              <span className="group-hover:text-[#41E0FF] transition-colors duration-300 flex items-center justify-center gap-4 sm:gap-3">
                 Return to Living Intelligence <ArrowRight className="w-6 h-6" />
               </span>
             </motion.button>
