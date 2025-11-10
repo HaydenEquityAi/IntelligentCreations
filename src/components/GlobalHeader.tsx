@@ -48,7 +48,7 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
             <img src={logo} alt="IntelligentCreations" className="h-10 w-auto" />
             <div className="hidden lg:block">
               <span className="text-[#F5F7FA] group-hover:text-[#41E0FF] transition-colors duration-300 font-semibold">
-                IntelligentCreations
+                Intelligent Creations
               </span>
             </div>
           </motion.button>

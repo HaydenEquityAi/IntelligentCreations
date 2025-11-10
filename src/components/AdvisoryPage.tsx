@@ -71,7 +71,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
           </motion.div>
 
           <motion.h1
-            className="mb-6"
+            className="mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -80,7 +80,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-xl max-w-3xl mx-auto"
+            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -91,8 +91,8 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
       </section>
 
       {/* AI Strategy */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -160,8 +160,8 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
       </section>
 
       {/* Data Architecture */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -222,8 +222,8 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
       </section>
 
       {/* Governance */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -278,7 +278,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-56 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -304,13 +304,13 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
 
           <motion.button
             onClick={() => onNavigate('contact')}
-            className="group relative px-24 py-8 bg-gradient-to-r from-[#1E90FF] to-[#A9B3C1] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-xl font-medium"
+            className="group relative px-8 sm:px-16 lg:px-24 py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-lg lg:text-xl font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
             whileHover={{
-              boxShadow: '0 0 60px rgba(30, 144, 255, 0.6)',
+              boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
             }}
             whileTap={{
               scale: 0.98,
@@ -321,7 +321,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
             </span>
 
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-[#A9B3C1] to-[#1E90FF]"
+              className="absolute inset-0 bg-gradient-to-r from-[#5AE0FF] to-[#1E90FF]"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [0, 0.5, 0],

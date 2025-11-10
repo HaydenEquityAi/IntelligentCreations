@@ -16,9 +16,9 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
           className="absolute inset-0"
           animate={{
             background: [
-              'radial-gradient(circle at 20% 30%, rgba(0, 206, 209, 0.1) 0%, transparent 60%)',
-              'radial-gradient(circle at 80% 70%, rgba(30, 144, 255, 0.15) 0%, transparent 60%)',
-              'radial-gradient(circle at 20% 30%, rgba(0, 206, 209, 0.1) 0%, transparent 60%)',
+              'radial-gradient(circle at 20% 30%, rgba(30, 144, 255, 0.1) 0%, transparent 60%)',
+              'radial-gradient(circle at 80% 70%, rgba(94, 224, 255, 0.15) 0%, transparent 60%)',
+              'radial-gradient(circle at 20% 30%, rgba(30, 144, 255, 0.1) 0%, transparent 60%)',
             ],
           }}
           transition={{ duration: 10, repeat: Infinity }}
@@ -47,7 +47,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 text-center">
           <motion.h1
-            className="mb-6"
+            className="mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -56,7 +56,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-xl max-w-3xl mx-auto"
+            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -67,8 +67,8 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Data Infrastructure */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -76,10 +76,10 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#00CED1]/10 to-[#1E90FF]/10 border border-[#00CED1]/30"
+              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30"
               whileHover={{
                 rotate: 2,
-                boxShadow: '0 0 30px rgba(0, 206, 209, 0.4)',
+                boxShadow: '0 0 30px rgba(94, 224, 255, 0.4)',
               }}
               transition={{ duration: 0.3 }}
             >
@@ -130,8 +130,8 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Automation Architecture */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -193,8 +193,8 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* Insight Engines */}
-      <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -202,7 +202,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#00CED1]/10 to-[#5AE0FF]/10 border border-[#00CED1]/30"
+              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(94, 224, 255, 0.4)',
@@ -245,14 +245,14 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-56 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           animate={{
             background: [
-              'radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.15) 0%, transparent 70%)',
-              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.2) 0%, transparent 70%)',
-              'radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.15) 0%, transparent 70%)',
+              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
+              'radial-gradient(circle at 50% 50%, rgba(94, 224, 255, 0.2) 0%, transparent 70%)',
+              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
             ],
           }}
           transition={{ duration: 5, repeat: Infinity }}
@@ -271,13 +271,13 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
 
           <motion.button
             onClick={() => onNavigate('contact')}
-            className="group relative px-24 py-8 bg-gradient-to-r from-[#00CED1] to-[#1E90FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-xl font-medium"
+            className="group relative px-8 sm:px-16 lg:px-24 py-4 sm:py-6 lg:py-8 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-lg lg:text-xl font-medium"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
             whileHover={{
-              boxShadow: '0 0 60px rgba(0, 206, 209, 0.6)',
+              boxShadow: '0 0 60px rgba(94, 224, 255, 0.6)',
             }}
           >
             <span className="relative z-10 flex items-center justify-center gap-3">
@@ -285,7 +285,7 @@ export function EnterpriseLabPage({ onNavigate }: EnterpriseLabPageProps) {
             </span>
 
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-[#1E90FF] to-[#00CED1]"
+              className="absolute inset-0 bg-gradient-to-r from-[#5AE0FF] to-[#1E90FF]"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [0, 0.5, 0],

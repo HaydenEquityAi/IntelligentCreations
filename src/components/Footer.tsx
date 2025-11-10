@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import logo from '../assets/IntelligentCreations Logo.png';
 
 export interface FooterProps {
   onNavigate: (pageId: string) => void;
@@ -9,11 +10,19 @@ export function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="relative mt-48 border-t border-[#41E0FF]/20 bg-[#0B132B]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-10 lg:gap-16 mb-12">
           {/* Brand Column */}
           <div>
-            <h3 className="text-xl font-bold text-[#F5F7FA] mb-4">IntelligentCreations</h3>
-            <p className="text-[#A9B3C1] text-sm mb-6">Where intelligence meets creation.</p>
+            {/* Logo */}
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={logo} 
+                alt="Intelligent Creations" 
+                className="w-8 h-8 flex-shrink-0" 
+              />
+              <h3 className="text-xl font-bold text-[#F5F7FA]">Intelligent Creations</h3>
+            </div>
+            <p className="text-[#A9B3C1] text-sm mb-6 leading-relaxed">Where intelligence meets creation.</p>
             <div className="flex items-center gap-4">
               <a
                 href="https://linkedin.com/company/intelligentcreations"
@@ -101,8 +110,8 @@ export function Footer({ onNavigate }: FooterProps) {
 
       {/* Bottom Bar */}
       <div className="bg-[#0B132B]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#A9B3C1]/70">© {new Date().getFullYear()} IntelligentCreations. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p className="text-xs text-[#A9B3C1]/70">© {new Date().getFullYear()} Intelligent Creations. All rights reserved.</p>
           <p className="text-xs text-[#A9B3C1]/70">Where intelligence meets creation.</p>
         </div>
       </div>

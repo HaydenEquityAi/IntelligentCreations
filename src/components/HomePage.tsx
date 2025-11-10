@@ -17,7 +17,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center text-center">
           <motion.h1
-            className="mb-6"
+            className="mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -45,7 +45,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </motion.h1>
 
           <motion.p
-            className="mb-12 text-[#A9B3C1] text-xl max-w-3xl mx-auto"
+            className="mb-12 text-[#A9B3C1] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -83,7 +83,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 2 - Intelligent Systems */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full">
             <defs>
@@ -115,7 +115,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -159,9 +159,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 3 - Enterprise Solutions Lab */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -213,9 +213,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 4 - AI Product Studio */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -262,7 +262,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 5 - R&D + Innovation */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <motion.div
             className="absolute inset-0"
@@ -277,7 +277,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -327,9 +327,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 6 - Automation + Integration */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -385,9 +385,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 7 - Advisory + Consulting */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -445,29 +445,22 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Section 8 - Final CTA */}
-      <section id="work" className="relative py-56 overflow-hidden">
+      <section id="work" className="relative py-16 sm:py-24 lg:py-56 overflow-hidden">
+        {/* Animated background */}
+        <motion.div
+          className="absolute inset-0"
+          animate={{
+            background: [
+              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
+              'radial-gradient(circle at 50% 50%, rgba(94, 224, 255, 0.2) 0%, transparent 70%)',
+              'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
+            ],
+          }}
+          transition={{ duration: 5, repeat: Infinity }}
+        />
+
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="relative rounded-3xl border border-[#41E0FF]/30 bg-gradient-to-br from-[#0B132B]/80 to-[#0B132B]/60 backdrop-blur-sm overflow-hidden"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            {/* Animated background */}
-            <motion.div
-              className="absolute inset-0"
-              animate={{
-                background: [
-                  'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
-                  'radial-gradient(circle at 50% 50%, rgba(94, 224, 255, 0.2) 0%, transparent 70%)',
-                  'radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.15) 0%, transparent 70%)',
-                ],
-              }}
-              transition={{ duration: 5, repeat: Infinity }}
-            />
-
             {/* Content container with vertical centering */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 lg:px-12 lg:py-32">
               <motion.h2
@@ -492,7 +485,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
               <motion.button
                 onClick={() => onNavigate('contact')}
-                className="group relative px-32 py-10 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-2xl font-medium"
+                className="group relative px-8 sm:px-16 lg:px-32 py-4 sm:py-6 lg:py-10 bg-gradient-to-r from-[#1E90FF] to-[#5AE0FF] rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 text-base sm:text-xl lg:text-2xl font-medium"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -519,7 +512,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 />
               </motion.button>
             </div>
-          </motion.div>
           </div>
         </div>
       </section>
