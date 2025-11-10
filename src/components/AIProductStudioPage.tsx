@@ -109,7 +109,7 @@ export function AIProductStudioPage({ onNavigate }: AIProductStudioPageProps) {
             >
               <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                 <motion.div
-                  className="mb-6 p-4 w-fit rounded-xl border"
+                  className="mb-8 p-4 w-fit rounded-xl border"
                   style={{
                     background: `linear-gradient(135deg, ${product.color}10, ${product.color}05)`,
                     borderColor: `${product.color}30`,

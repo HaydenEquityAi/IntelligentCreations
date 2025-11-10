@@ -102,7 +102,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#41E0FF]/10 border border-[#5AE0FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#41E0FF]/10 border border-[#5AE0FF]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(94, 224, 255, 0.4)',
@@ -236,7 +236,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#41E0FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#41E0FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30"
               whileHover={{
                 rotate: -2,
                 boxShadow: '0 0 30px rgba(65, 224, 255, 0.4)',
@@ -268,7 +268,7 @@ export function AutomationPage({ onNavigate }: AutomationPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#41E0FF]/10 border border-[#5AE0FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#41E0FF]/10 border border-[#5AE0FF]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(94, 224, 255, 0.4)',

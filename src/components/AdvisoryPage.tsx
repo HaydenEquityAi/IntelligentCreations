@@ -100,7 +100,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#A9B3C1]/10 border border-[#1E90FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#A9B3C1]/10 border border-[#1E90FF]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(30, 144, 255, 0.4)',
@@ -199,7 +199,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#A9B3C1]/10 to-[#1E90FF]/10 border border-[#A9B3C1]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#A9B3C1]/10 to-[#1E90FF]/10 border border-[#A9B3C1]/30"
               whileHover={{
                 rotate: -2,
                 boxShadow: '0 0 30px rgba(169, 179, 193, 0.4)',
@@ -231,7 +231,7 @@ export function AdvisoryPage({ onNavigate }: AdvisoryPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#A9B3C1]/10 border border-[#1E90FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#1E90FF]/10 to-[#A9B3C1]/10 border border-[#1E90FF]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(30, 144, 255, 0.4)',

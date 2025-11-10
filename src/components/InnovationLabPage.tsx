@@ -100,7 +100,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#8B5CF6]/10 to-[#1E90FF]/10 border border-[#8B5CF6]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#8B5CF6]/10 to-[#1E90FF]/10 border border-[#8B5CF6]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(139, 92, 246, 0.4)',
@@ -196,7 +196,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#8B5CF6]/10 border border-[#5AE0FF]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#5AE0FF]/10 to-[#8B5CF6]/10 border border-[#5AE0FF]/30"
               whileHover={{
                 rotate: -2,
                 boxShadow: '0 0 30px rgba(94, 224, 255, 0.4)',
@@ -228,7 +228,7 @@ export function InnovationLabPage({ onNavigate }: InnovationLabPageProps) {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="mb-6 p-4 w-fit rounded-xl bg-gradient-to-br from-[#8B5CF6]/10 to-[#5AE0FF]/10 border border-[#8B5CF6]/30"
+              className="mb-8 p-4 w-fit rounded-xl bg-gradient-to-br from-[#8B5CF6]/10 to-[#5AE0FF]/10 border border-[#8B5CF6]/30"
               whileHover={{
                 rotate: 2,
                 boxShadow: '0 0 30px rgba(139, 92, 246, 0.4)',

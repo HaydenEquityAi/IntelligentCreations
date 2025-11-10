@@ -63,7 +63,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               transition={{ delay: 0.2, duration: 0.8 }}
               whileHover={{ scale: 1.02 }}
             >
-              <div className="mb-4 p-3 w-fit rounded-lg bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30">
+              <div className="mb-6 p-3 w-fit rounded-lg bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30">
                 <Mail className="w-6 h-6 text-[#41E0FF]" />
               </div>
               <h3 className="mb-3">Email Us</h3>
@@ -83,7 +83,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               transition={{ delay: 0.3, duration: 0.8 }}
               whileHover={{ scale: 1.02 }}
             >
-              <div className="mb-4 p-3 w-fit rounded-lg bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30">
+              <div className="mb-6 p-3 w-fit rounded-lg bg-gradient-to-br from-[#1E90FF]/10 to-[#5AE0FF]/10 border border-[#41E0FF]/30">
                 <Calendar className="w-6 h-6 text-[#41E0FF]" />
               </div>
               <h3 className="mb-3">Schedule a Call</h3>

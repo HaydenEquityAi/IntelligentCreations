@@ -101,7 +101,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+              <div className="mb-4 inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
                 <Sparkles className="w-4 h-4 text-[#41E0FF]" />
                 <span className="text-[#41E0FF] text-sm">Applied Generative AI</span>
               </div>
@@ -201,7 +201,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#1E90FF]/20 border border-[#8B5CF6]/30 rounded-full">
+              <div className="mb-4 inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#1E90FF]/20 border border-[#8B5CF6]/30 rounded-full">
                 <Layers className="w-4 h-4 text-[#8B5CF6]" />
                 <span className="text-[#8B5CF6] text-sm">Deep Learning</span>
               </div>
@@ -226,7 +226,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+              <div className="mb-4 inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
                 <Brain className="w-4 h-4 text-[#41E0FF]" />
                 <span className="text-[#41E0FF] text-sm">Machine Learning</span>
               </div>
@@ -295,7 +295,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+            <div className="mb-4 inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
               <Network className="w-4 h-4 text-[#41E0FF]" />
               <span className="text-[#41E0FF] text-sm">Multi-Agent Ecosystems</span>
             </div>
@@ -387,7 +387,7 @@ export function IntelligentSystemsPage({ onNavigate }: IntelligentSystemsPagePro
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
+              <div className="mb-4 inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[#1E90FF]/20 to-[#5AE0FF]/20 border border-[#41E0FF]/30 rounded-full">
                 <Rocket className="w-4 h-4 text-[#41E0FF]" />
                 <span className="text-[#41E0FF] text-sm">Real Systems, Real Impact</span>
               </div>
