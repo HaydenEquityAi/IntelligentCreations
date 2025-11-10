@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Twitter, Github, Facebook } from 'lucide-react';
-import logo from '../assets/IntelligentCreations Logo.png';
+import logo from '../assets/IntelligentCreationTransparentLogo.png';
 
 export interface FooterProps {
   onNavigate: (pageId: string) => void;

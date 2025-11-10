@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import logo from '../assets/IntelligentCreations Logo.png';
+import logo from '../assets/IntelligentCreationTransparentLogo.png';
 
 interface NavigationItem {
   id: string;
