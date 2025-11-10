@@ -15,7 +15,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <NeuralBackground />
         <GradientWave />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-12 lg:px-24 flex flex-col items-center justify-center text-center">
           <motion.h1
             className="mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -54,7 +54,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center"
+            className="flex flex-col sm:flex-row justify-center items-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
