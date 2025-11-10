@@ -48,7 +48,7 @@ export function GlobalHeader({ activePage, onNavigate }: GlobalHeaderProps) {
             whileHover={{ scale: 1.02 }}
           >
             <img src={logo} alt="Intelligent Creations" className="h-10 w-auto" />
-            <span className="hidden lg:inline-block text-[#F5F7FA] group-hover:text-[#41E0FF] transition-colors duration-300 font-semibold">
+            <span className="hidden xl:inline-block text-[#F5F7FA] group-hover:text-[#41E0FF] transition-colors duration-300 font-semibold">
               Intelligent Creations
             </span>
           </motion.button>
